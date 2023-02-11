@@ -44,29 +44,29 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="grey4">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              Venha conhecer meus projetos {" "}
               <Text as="span" type="heading1" color="brand1">
-                love
+                desenvolvidos.
               </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+            Adoro assuntos relacionados a tecnologias.
+            Hoje em formação pela Kenzie Academy Brasil, escola de formação especializada
+            em desenvolvimento fullstack, onde vivenciamos o dia-a-dia das empresas, busco
+            minha colocação na área de fullstack.
+            O que sua empresa irá ganhar com minha contratação? Bom, alguém com conhecimentos
+            nas ferramentas logo abaixo, com espirito de equipe e que agregará novas ideias e serviço.
+            E ai? Vamos nos apresentar?
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Meus Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+              Veja o code do meu portfólio
               </Button>
               <Button
                 color="grey5"
@@ -92,12 +92,12 @@ export const Home = (): JSX.Element => {
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
               <Text as="h2" type="heading4" color="grey4">
-                My projects
+                Meus Projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
+                Sobre mim{" "}
                 <Text as="span" color="brand5">
-                  side projects
+                projetos paralelos
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
