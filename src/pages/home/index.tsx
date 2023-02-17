@@ -29,7 +29,8 @@ import {
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+  const portfolioUrl = `https://github.com/${userData.githubUser}/portfolio`;
+  const gitLab = `https://gitlab.com/${userData.githubUser}/api-blog/-/tree/main/`
 
   return (
     <main id="home">
@@ -54,11 +55,6 @@ export const Home = (): JSX.Element => {
             </Text>
             <Text type="body1" color="grey2">
             Adoro assuntos relacionados a tecnologias.
-            Hoje em formação pela Kenzie Academy Brasil, escola de formação especializada
-            em desenvolvimento fullstack, onde vivenciamos o dia-a-dia das empresas, busco
-            minha colocação na área de fullstack.
-            O que sua empresa irá ganhar com minha contratação? Bom, alguém com conhecimentos
-            nas ferramentas logo abaixo, com espirito de equipe e que agregará novas ideias e serviço.
             E ai? Vamos nos apresentar?
             </Text>
             <HeaderButtonsArea>
@@ -97,7 +93,16 @@ export const Home = (): JSX.Element => {
               <Text as="p" type="body1" color="grey2">
                 Sobre mim{" "}
                 <Text as="span" color="brand5">
-                projetos paralelos
+                Hoje em formação pela Kenzie Academy Brasil, escola de formação especializada
+                  em desenvolvimento fullstack, onde vivenciamos o dia-a-dia das empresas, busco
+                  minha colocação na área de fullstack.
+                  O que sua empresa irá ganhar com minha contratação? 
+                  Bom, veja alguns dos projetos que já tive participação logo abaixo, 
+                  com espirito de equipe e que agregará novas ideias e serviço.
+                Venha conhecer um de meus projetos paralelos:
+                <Button as="a" type="outline" target="_blank" href={gitLab}>
+                  Projeto em gitLab
+                </Button>
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
